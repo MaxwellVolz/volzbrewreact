@@ -32,10 +32,6 @@ $ npm install
 
 
 ### Development
-<<<<<<< HEAD
-To begin the development, run 'npm start' or 'yarn start'.
-When you save a file, code will auto-compile, or show error?, and re-launch development.
-=======
 
 Compile the code and start the local server.
 
@@ -73,7 +69,6 @@ $ npm start
 3. Change references to 'className={styles.root}' to 'style={styles.elementName}'
 4. Verify import statements for MaterialUI dependencies
 
->>>>>>> 082b80f3f3c607fe9bf304af34217ede91c5598b
 
 ### Compiling
 

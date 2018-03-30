@@ -89,7 +89,7 @@ export default class Header extends PureComponent<PropType> {
                                 Our methods are best for anyone interested in brewing beer at home. If you’re looking to get started, or have previous brewing experience, we can guide you to continued success: <b>lots and lots of great home brew!</b>
                                 <br />
                                 <br />
-                                Once we decided we were going to brew we quickly learned t hat finding good information online is surprisingly very difficult: The information is disorganized and the best tips are often found deeply buried in forums. In many cases advice proved contradictory, which lead to even more questions.
+                                Once we decided we were going to brew we quickly learned that finding good information online is surprisingly very difficult: The information is disorganized and the best tips are often found deeply buried in forums. In many cases advice proved contradictory, which lead to even more questions.
                                 <br />
                                 <br />
                                 We created this site to provide the most important information, the things we really wanted and needed to know when we were just starting out, organized conveniently in one location.

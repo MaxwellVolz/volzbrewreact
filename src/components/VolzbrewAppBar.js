@@ -15,7 +15,7 @@ const styles = {
     appBar: {
         display: 'flex',
         justifyContent: 'flex-end',
-        paddingRight: 17
+        paddingRight: 17,
     },
     buttonText: {
         color: 'white',
@@ -27,11 +27,16 @@ export default class VolzbrewAppBar extends PureComponent<PropType> {
     render() {
         return (
 
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <div style={styles.appBar}>
                     <Link to="/">
                         <Button style={styles.buttonText}>
                             Home
+                        </Button>
+                    </Link>
+                    <Link to="/brew">
+                        <Button style={styles.buttonText}>
+                            Brew
                         </Button>
                     </Link>
                     <Link to="/about">

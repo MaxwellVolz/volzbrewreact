@@ -34,7 +34,9 @@ $ npm start
 
 Open a browser to <http://localhost:3000/>.
 ### Development
-Coming Soon!
+To begin the development, run 'npm start' or 'yarn start'.
+When you save a file, code will auto-compile, or show error?, and re-launch development.
+
 ### Compiling
 Coming Soon!
 ### Pushing updates to Git

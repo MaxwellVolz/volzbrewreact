@@ -115,7 +115,10 @@ export default class Header extends PureComponent<PropType> {
                         <div style={styles.logoContainer} ><img style={styles.logoSVG} src={`${logoSVG}`} /></div>
 
                         {/* <Typography variant="display2" style={styles.mainHeaderText}>Volzbrew</Typography> */}
-                        <Typography variant="headline" style={styles.headerText}>Making good beer, cheap.</Typography>
+                        <Typography variant="headline" style={styles.headerText}>
+                        <br />
+                        Learn how to make great beer.
+                        </Typography>
 
                         {/* <Typography variant="subheading" style={styles.headerText}>
                         Making good beer cheap
@@ -142,23 +145,23 @@ export default class Header extends PureComponent<PropType> {
                                 <Card style={styles.card}>
                                     <CardMedia
                                         style={styles.cardImg1}
-                                        title="Contemplative Reptile"
+                                        title="Homebrewing Basics"
                                         src="placeholderSRC"
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="headline" component="h2">
-                                            Brew Beer
+                                            How to Brew
                                         </Typography>
                                         <Typography component="p">
-                                            Get started...
+                                            Everything you need to know to get started.
                                     </Typography>
                                     </CardContent>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Share
+                                            Learn More
                                         </Button>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            Share
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -169,7 +172,7 @@ export default class Header extends PureComponent<PropType> {
                                 <Card style={styles.card}>
                                     <CardMedia
                                         style={styles.cardImg2}
-                                        title="Contemplative Reptile"
+                                        title="Equipment"
                                         src="placeholderSRC"
                                     />
                                     <CardContent>
@@ -177,15 +180,15 @@ export default class Header extends PureComponent<PropType> {
                                             Brewing Equipment
                                         </Typography>
                                         <Typography component="p">
-                                            The equipment we use.
+                                            The tools we have, use, and recommend. 
                                     </Typography>
                                     </CardContent>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Share
+                                            Learn More
                                         </Button>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            Share
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -196,7 +199,7 @@ export default class Header extends PureComponent<PropType> {
                                 <Card style={styles.card}>
                                     <CardMedia
                                         style={styles.cardImg3}
-                                        title="Contemplative Reptile"
+                                        title="$$"
                                         src="placeholderSRC"
                                     />
                                     <CardContent>
@@ -204,15 +207,17 @@ export default class Header extends PureComponent<PropType> {
                                             Cost of Brewing
                                         </Typography>
                                         <Typography component="p">
-                                            Does home brewing save money?
+                                            How much does brewing cost?
+                                            <br />
+                                             Is it worth it?                                            
                                     </Typography>
                                     </CardContent>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Share
+                                            Learn More
                                         </Button>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            Share
                                         </Button>
                                     </CardActions>
                                 </Card>

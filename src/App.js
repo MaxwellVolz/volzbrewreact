@@ -20,6 +20,7 @@ import {
 import HomePage from './pages/home/';
 import AboutPage from './pages/about/';
 import BrewingProcessPage from './pages/brewingProcess/';
+import BrewPage from './pages/brew/';
 
 
 import VolzbrewAppBar from './components/VolzbrewAppBar';
@@ -82,6 +83,12 @@ const BrewingProcess = () => (
     </div>
 )
 
+const Brew = () => (
+    <div>
+        <BrewPage />
+    </div>
+)
+
 export default class Header extends PureComponent<PropType> {
     render() {
         return (
@@ -95,6 +102,7 @@ export default class Header extends PureComponent<PropType> {
                         <Route path="/about" component={About} />
                         <Route path="/blog" component={Blog} />
                         <Route path="/brewingProcess" component={BrewingProcess} />
+                        <Route path="/brew" component={Brew} />
 
                     </div>
 

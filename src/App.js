@@ -22,6 +22,9 @@ import AboutPage from './pages/about/';
 import BrewingProcessPage from './pages/brewingProcess/';
 import BrewingProcessPage1 from './pages/brewingProcess/1-Make-Wort';
 import BrewingProcessPage2 from './pages/brewingProcess/2-The-Boil';
+import BrewingProcessPage3 from './pages/brewingProcess/3-Cool-Wort';
+import BrewingProcessPage4 from './pages/brewingProcess/4-Fermentation';
+import BrewingProcessPage5 from './pages/brewingProcess/5-Carbonation';
 
 
 import BrewPage from './pages/brew/';
@@ -99,6 +102,25 @@ const BrewingProcess2 = () => (
     </div>
 )
 
+const BrewingProcess3 = () => (
+    <div>
+        <BrewingProcessPage3 />
+    </div>
+)
+
+const BrewingProcess4 = () => (
+    <div>
+        <BrewingProcessPage4 />
+    </div>
+)
+const BrewingProcess5 = () => (
+    <div>
+        <BrewingProcessPage5 />
+    </div>
+)
+
+
+
 const Brew = () => (
     <div>
         <BrewPage />
@@ -125,6 +147,10 @@ export default class Header extends PureComponent<PropType> {
                         <Route exact path="/brewingProcess" component={BrewingProcess} />
                         <Route path="/brewingProcess/1-Make-Wort" component={BrewingProcess1} />
                         <Route path="/brewingProcess/2-The-Boil" component={BrewingProcess2} />
+                        <Route path="/brewingProcess/3-Cool-Wort" component={BrewingProcess3} />
+                        <Route path="/brewingProcess/4-Fermentation" component={BrewingProcess4} />
+                        <Route path="/brewingProcess/5-Carbonation" component={BrewingProcess5} />
+
 
 
                         <Route path="/brew" component={Brew} />

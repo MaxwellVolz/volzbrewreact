@@ -1,6 +1,6 @@
 import AppBar from 'material-ui/AppBar';
 import Button from 'material-ui/Button';
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Component } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ import List, { ListItem, ListItemText } from 'material-ui/List';
 
 import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
+
 
 import backgroundImage from '../../imgs/milledGrains.jpg';
 
@@ -55,34 +56,31 @@ const styles = {
 
 };
 
-
 export default class Header extends PureComponent<PropType> {
-
     render() {
         return (
 
             <MuiThemeProvider theme={theme}>
-            <ScrollToTopOnMount/>
+                <ScrollToTopOnMount />
 
 
-               
                 <div className="contentWrap86">
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
-                        <Grid item xs={4} md={2} lg={2} style={{backgroundColor:'white',height:'100%',padding:0}}>
+                        <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
 
                             <List component="nav">
                                 <Link to="/brewingProcess">
-                                    <ListItem button style={{ backgroundColor: 'palegreen' }}>
+                                    <ListItem button>
                                         <ListItemText primary="Overview" />
                                     </ListItem>
                                 </Link>
                                 <Link to="/brewingProcess/1-Make-Wort">
-                                    <ListItem button >
+                                    <ListItem button>
                                         <ListItemText primary="1. Make Wort" />
                                     </ListItem>
                                 </Link>
                                 <Link to="/brewingProcess/2-The-Boil">
-                                    <ListItem button >
+                                    <ListItem button>
                                         <ListItemText primary="2. The Boil" />
                                     </ListItem>
                                 </Link>
@@ -93,7 +91,7 @@ export default class Header extends PureComponent<PropType> {
                                     </ListItem>
                                 </Link>
                                 <Link to="/brewingProcess/4-Fermentation">
-                                    <ListItem button>
+                                    <ListItem button style={{ backgroundColor: 'palegreen' }}>
                                         <ListItemText primary="4. Fermentation" />
                                     </ListItem>
                                 </Link>
@@ -107,85 +105,78 @@ export default class Header extends PureComponent<PropType> {
 
                         </Grid>
                         <Grid item xs={7} md={4} lg={4} >
-                        <Typography variant="subheading" gutterBottom>
-                                        {/* Volzbrew is dedicated to teaching an affordable way to brew at home. */}
-                                        Homebrewing is NOT hard.
-                                        <br />
-                                        <br />
-                                        Only four ingredients are needed to make beer: <b>water, grain, hops, and yeast.</b>
-                                        <br />
-                                        <br />
-                                        Brewers combine these ingredients in countless ways to brew their favorite beers and create their own recipes.
-                                        <br />
-                                        <br />
-                                        <i> Volz Brew Tip: Having the right brewing equipment makes homebrewing easier and much more enjoyable. Good, durable equipment doesn’t cost a fortune! Check out what we use: <a href="#" style={{textDecoration:'underline solid blue'}}>Brewing Equipment</a></i>
-                                        <br />
-                                        <br />
-                                        There are 5 main steps in the brewing process:
-                                        <ol>
-                                            <li>Make Wort</li>
-                                            <li>The Boil</li>
-                                            <li>Cooling the Wort and Pitching the Yeast</li>
-                                            <li>Fermentation</li>
-                                            <li> Carbonation</li>
-                                        </ol>
+                            <Typography variant="subheading" gutterBottom>
 
+                                <b>Step 4: Fermentation</b>
+                                <br />
+                                <br />
+
+                                <b>Wort</b> is unfermented beer - a mixture of water and sugar that’s been extracted from grains which ultimately serves as food for the yeast to consume and create <b>alcohol</b>.
+                            <br />
+                                <br />
+                                Homebrewers typically make wort in one of two ways: combining <b>malt</b> extract with water, or steeping milled grains to extract their sugars (sort of like making tea).
+                            <br />
+                                <br />
+                                <b><i>Extract Brewing</i></b>: Add liquid or dry malt extract to heated water
+                                    <br />
+                                <b><i>All Grain Brewing</i></b>: Add crushed (milled), malted grains to water, heated to ~155 degrees and left to , to
+                                activate enzymes in the grain which help convert the starch in the grain into simple sugars for the yeast to eat.
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
                             <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
+                                <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                     <img src={water} className="svgIcon" alt="water" />
                                 </Grid>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
+                                <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                     <img src={grain} className="svgIcon" alt="grain" />
                                 </Grid>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
+                                <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                     <img src={hops} className="svgIcon" alt="hops" />
                                 </Grid>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>                                    
+                                <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                     <img src={yeast} className="svgIcon" alt="yeast" />
                                 </Grid>
                             </Grid>
-                       
+
                         </Grid>
                     </Grid>
-                    </div>
+                </div>
 
-                    {/* <div className="contentWrapFullWidth">
+                {/* <div className="contentWrapFullWidth">
                         <Typography variant="display1" gutterBottom >
                             Step 1: Make Wort
                         </Typography>
                     </div> */}
-                    <div style={styles.contentWrap}>
+                <div style={styles.contentWrap}>
 
-                        <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
-                            <Grid item xs={12}>
+                    <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
+                        <Grid item xs={12}>
 
-                                <Typography variant="subheading" gutterBottom>
-                                    
-                        </Typography>
-                            </Grid>
+                            <Typography variant="subheading" gutterBottom>
+
+                            </Typography>
                         </Grid>
-                    </div>
-                    <div style={styles.contentWrap}>
+                    </Grid>
+                </div>
+                <div style={styles.contentWrap}>
 
-                        <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
-                            <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
-                                <Link to="/brewingProcess/1-Make-Wort">
+                    <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
+                        <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
+                            <Link to="/brewingProcess">
 
-                                    <Button variant="raised">
-                                        Step 1: Make Wort
-    
-                                </Button>
-                                </Link>
+                                <Button variant="raised">
+                                    The Brewing Process
 
-                            </Grid>
+                            </Button>
+                            </Link>
+
                         </Grid>
+                    </Grid>
 
 
-                    </div>
-                    
+                </div>
+
             </MuiThemeProvider>
 
         );

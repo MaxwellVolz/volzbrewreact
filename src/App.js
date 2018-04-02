@@ -20,6 +20,10 @@ import {
 import HomePage from './pages/home/';
 import AboutPage from './pages/about/';
 import BrewingProcessPage from './pages/brewingProcess/';
+import BrewingProcessPage1 from './pages/brewingProcess/1-Make-Wort';
+import BrewingProcessPage2 from './pages/brewingProcess/2-The-Boil';
+
+
 import BrewPage from './pages/brew/';
 
 
@@ -55,7 +59,7 @@ const styles = {
         justifyContent: 'flex-end',
         paddingRight: 17
     },
-    
+
 
 };
 
@@ -83,17 +87,34 @@ const BrewingProcess = () => (
     </div>
 )
 
+const BrewingProcess1 = () => (
+    <div>
+        <BrewingProcessPage1 />
+    </div>
+)
+
+const BrewingProcess2 = () => (
+    <div>
+        <BrewingProcessPage2 />
+    </div>
+)
+
 const Brew = () => (
     <div>
         <BrewPage />
     </div>
 )
 
+
+
+
+
 export default class Header extends PureComponent<PropType> {
     render() {
         return (
 
-            <Router>
+            <Router onUpdate={() => window.scrollTo(0, 0)} >
+
                 <div>
                     <VolzbrewAppBar />
 
@@ -101,12 +122,17 @@ export default class Header extends PureComponent<PropType> {
                         <Route exact path="/" component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/blog" component={Blog} />
-                        <Route path="/brewingProcess" component={BrewingProcess} />
+                        <Route exact path="/brewingProcess" component={BrewingProcess} />
+                        <Route path="/brewingProcess/1-Make-Wort" component={BrewingProcess1} />
+                        <Route path="/brewingProcess/2-The-Boil" component={BrewingProcess2} />
+
+
                         <Route path="/brew" component={Brew} />
 
                     </div>
 
                 </div>
+
             </Router>
 
         );

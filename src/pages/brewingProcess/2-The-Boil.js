@@ -15,6 +15,8 @@ import List, { ListItem, ListItemText } from 'material-ui/List';
 
 import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
+import ArticleNavigation from '../../components/ArticleNavigation';
+
 
 
 import backgroundImage from '../../imgs/milledGrains.jpg';
@@ -58,6 +60,34 @@ const styles = {
 
 export default class Header extends PureComponent<PropType> {
     render() {
+        var navOptions = [
+            {
+                name: 'Overview',
+                url: '/brewingProcess'
+            }, {
+                name: '1. Make Wort',
+                url: '/brewingProcess/1-Make-Wort',
+            },
+            {
+                name: '2. The Boil',
+                url: '/brewingProcess/2-The-Boil',
+                isActive: true
+            },
+            {
+                name: '3. Cooling the Wort and Pitching the Yeast',
+                url: '/brewingProcess/3-Cool-Wort',
+            },
+            {
+                name: '4. Fermentation',
+                url: '/brewingProcess/4-Fermentation',
+            },
+            {
+                name: '5. Carbonation',
+                url: '/brewingProcess/5-Carbonation',
+            },
+        ];
+
+
         return (
 
             <MuiThemeProvider theme={theme}>
@@ -66,44 +96,11 @@ export default class Header extends PureComponent<PropType> {
 
                 <div className="contentWrap86">
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
+                        
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-
-                            <List component="nav">
-                                <Link to="/brewingProcess" >
-                                    <ListItem button className="articleNav">
-                                        <ListItemText primary="Overview" />
-                                    </ListItem>
-                                </Link>
-                                <Link to="/brewingProcess/1-Make-Wort" >
-                                    <ListItem button className="articleNav">
-                                        <ListItemText primary="1. Make Wort" />
-                                    </ListItem>
-                                </Link>
-                                <Link to="/brewingProcess/2-The-Boil" >
-                                    <ListItem button className="articleNav" style={{ backgroundColor: 'palegreen' }}>
-                                        <ListItemText primary="2. The Boil" />
-                                    </ListItem>
-                                </Link>
-
-                                <Link to="/brewingProcess/3-Cool-Wort" >
-                                    <ListItem button className="articleNav">
-                                        <ListItemText primary="3. Cooling the Wort and Pitching the Yeast" />
-                                    </ListItem>
-                                </Link>
-                                <Link to="/brewingProcess/4-Fermentation" >
-                                    <ListItem button className="articleNav">
-                                        <ListItemText primary="4. Fermentation" />
-                                    </ListItem>
-                                </Link>
-                                <Link to="/brewingProcess/5-Carbonation">
-                                    <ListItem button className="articleNav">
-                                        <ListItemText primary="5. Carbonation" />
-                                    </ListItem>
-                                </Link>
-
-                            </List>
-
+                            <ArticleNavigation navOptions={navOptions} />
                         </Grid>
+
                         <Grid item xs={7} md={4} lg={4} >
                             <Typography variant="subheading" gutterBottom>
 

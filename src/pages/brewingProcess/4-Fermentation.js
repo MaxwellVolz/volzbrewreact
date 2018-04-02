@@ -21,7 +21,7 @@ import backgroundImage from '../../imgs/milledGrains.jpg';
 
 import water from '../../imgs/water.svg';
 import hops from '../../imgs/hop.svg';
-import grain from '../../imgs/grain.svg';
+import grain from '../../imgs/grain2.svg';
 import yeast from '../../imgs/yeast3.svg';
 
 // const Water = require('../../imgs/water.svg');
@@ -69,34 +69,34 @@ export default class Header extends PureComponent<PropType> {
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
 
                             <List component="nav">
-                                <Link to="/brewingProcess">
-                                    <ListItem button>
+                                <Link to="/brewingProcess" >
+                                    <ListItem button className="articleNav">
                                         <ListItemText primary="Overview" />
                                     </ListItem>
                                 </Link>
-                                <Link to="/brewingProcess/1-Make-Wort">
-                                    <ListItem button>
+                                <Link to="/brewingProcess/1-Make-Wort" >
+                                    <ListItem button className="articleNav">
                                         <ListItemText primary="1. Make Wort" />
                                     </ListItem>
                                 </Link>
-                                <Link to="/brewingProcess/2-The-Boil">
-                                    <ListItem button>
+                                <Link to="/brewingProcess/2-The-Boil" >
+                                    <ListItem button className="articleNav">
                                         <ListItemText primary="2. The Boil" />
                                     </ListItem>
                                 </Link>
 
-                                <Link to="/brewingProcess/3-Cool-Wort">
-                                    <ListItem button>
+                                <Link to="/brewingProcess/3-Cool-Wort" >
+                                    <ListItem button className="articleNav">
                                         <ListItemText primary="3. Cooling the Wort and Pitching the Yeast" />
                                     </ListItem>
                                 </Link>
-                                <Link to="/brewingProcess/4-Fermentation">
-                                    <ListItem button style={{ backgroundColor: 'palegreen' }}>
+                                <Link to="/brewingProcess/4-Fermentation" >
+                                    <ListItem button className="articleNav" style={{ backgroundColor: 'palegreen' }}>
                                         <ListItemText primary="4. Fermentation" />
                                     </ListItem>
                                 </Link>
-                                <Link to="/brewingProcess/5-Carbonation">
-                                    <ListItem button>
+                                <Link to="/brewingProcess/5-Carbonation" >
+                                    <ListItem button className="articleNav">
                                         <ListItemText primary="5. Carbonation" />
                                     </ListItem>
                                 </Link>

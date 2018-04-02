@@ -42,7 +42,16 @@ a, a:visited, a:hover, a:active {
 @media only screen and (max-width: 768px) {
   .contentWrap {
     width: 86vw;
-    padding: 12px 0;
+    padding:12px 0;
+  }
+  .contentWrap86{
+    width: 96vw;
+    /* margin: 0 auto; */
+    padding:12px 0;
+  }
+  .articleNav{
+    padding-left:8px !important;
+    padding-right:0 !important;
   }
 }
 

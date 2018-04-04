@@ -12,8 +12,8 @@ export default class ArticleNavigation extends PureComponent<PropType> {
     render() {
         return (
             <List component="nav">
-                {this.props.navOptions.map((item) =>
-                    <Link to={item.url} >
+                {this.props.navOptions.map((item,index) =>
+                    <Link to={item.url} key={index}>
                         <ListItem button className={(item.isActive ? 'navActive' : '')}>
                             <ListItemText primary={item.name} />
                         </ListItem>

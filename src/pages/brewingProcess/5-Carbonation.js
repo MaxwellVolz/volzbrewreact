@@ -24,7 +24,7 @@ import hops from '../../imgs/hop.svg';
 import grain from '../../imgs/grain2.svg';
 import yeast from '../../imgs/yeast3.svg';
 import beer from '../../imgs/beer.svg';
-import brewProcess from '../../imgs/brewProcess.svg';
+// import brewProcess from '../../imgs/brewProcess.svg';
 
 
 
@@ -124,7 +124,7 @@ export default class Header extends PureComponent<PropType> {
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
-                            <img src={brewProcess} className="svgIcon" alt="brewProcess" />
+                            <img src={beer} className="svgIcon" alt="beer" />
                         </Grid>
                     </Grid>
                 </div>

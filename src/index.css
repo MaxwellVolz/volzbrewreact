@@ -71,6 +71,10 @@ a, a:visited, a:hover, a:active {
   padding:60px
 }
 
+.svgIcon{
+  max-height: 600px;
+}
+
 .svgIconInline{
   height: 23px;
   vertical-align: middle;

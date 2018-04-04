@@ -23,6 +23,8 @@ import water from '../../imgs/water.svg';
 import hops from '../../imgs/hop.svg';
 import grain from '../../imgs/grain2.svg';
 import yeast from '../../imgs/yeast3.svg';
+import beer from '../../imgs/beer.svg';
+
 
 // const Water = require('../../imgs/water.svg');
 
@@ -120,21 +122,7 @@ export default class Header extends PureComponent<PropType> {
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
-                            <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
-                                <Grid item xs={12} md={6} style={{height: '100%', padding: 0 }}>
-                                    <img src={grain} className="svgIcon" alt="grain" />
-                                </Grid>
-                                <Grid item xs={12} md={6} style={{height: '100%', padding: 0 }}>
-                                    <img src={water} className="svgIcon" alt="water" />
-                                </Grid>
-                                <Grid item xs={12} md={6} style={{height: '100%', padding: 0 }}>
-                                    <img src={yeast} className="svgIcon" alt="yeast" />
-                                </Grid>
-                                <Grid item xs={12} md={6} style={{height: '100%', padding: 0 }}>
-                                    <img src={hops} className="svgIcon" alt="hops" />
-                                </Grid>
-                            </Grid>
-
+                            <img src={beer} className="svgIcon" alt="beer" />
                         </Grid>
                     </Grid>
                 </div>

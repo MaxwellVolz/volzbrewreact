@@ -62,7 +62,9 @@ const styles = {
         justifyContent: 'flex-end',
         paddingRight: 17
     },
-
+    content:{
+        width: '100%'
+    }
 
 };
 

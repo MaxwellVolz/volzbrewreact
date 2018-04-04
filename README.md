@@ -75,21 +75,20 @@ $ npm start
 
 #### Iterators, Props, and an explanation of articleNavigation.js and Props in ReactJS
 
-Props are creation parameters that customize components
-
-We will use props to pass (names, urls, isActive) to the articleNavigation.
+* Props are creation parameters that customize components
+* We use props to pass (names, urls, isActive) to the articleNavigation.
  
-Using '/brewingProcess/1-Make-Wort.js' as an example.
+##### Using '/brewingProcess/1-Make-Wort.js' as an example:
 
 1. Include the dependency 'import ArticleNavigation from '../../components/ArticleNavigation'
 2. At the start of render() 'var navOptions = {}' sets up the props that will be passed to the component
 3. Pass the props to <ArticleNavigation navOptions={navOptions}/> 
 
-In article Navigation
+##### In 'articleNavigation.js'
 
-1. {this.props.navOptions} refers to the props that were passed to the component.
-2. A map() function iterates over the props and generates the DOM elements for the navigation.
-3. A terniary operator checks 'isActive' to determine what class to apply to the link container.
+* {this.props.navOptions} refers to the props that were passed to the component.
+* A map() function iterates over the props and generates the DOM elements for the navigation.
+* A terniary operator checks 'isActive' to determine what class to apply to the link container.
 
 #### SVG Guide
 

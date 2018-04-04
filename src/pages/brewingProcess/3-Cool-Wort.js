@@ -123,17 +123,18 @@ export default class Header extends PureComponent<PropType> {
                         <Grid item xs={8} md={6} lg={6} >
                             <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
                                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                                    <img src={water} className="svgIcon" alt="water" />
+                                    <img src={yeast} className="svgIcon" alt="yeast" />
                                 </Grid>
                                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                     <img src={grain} className="svgIcon" alt="grain" />
                                 </Grid>
                                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                                    <img src={hops} className="svgIcon" alt="hops" />
+                                    <img src={water} className="svgIcon" alt="water" />
                                 </Grid>
                                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                                    <img src={yeast} className="svgIcon" alt="yeast" />
+                                    <img src={hops} className="svgIcon" alt="hops" />
                                 </Grid>
+                               
                             </Grid>
 
                         </Grid>

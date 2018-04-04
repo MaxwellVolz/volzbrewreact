@@ -17,7 +17,6 @@ import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
 
-
 import backgroundImage from '../../imgs/milledGrains.jpg';
 
 import water from '../../imgs/water.svg';
@@ -96,7 +95,7 @@ export default class Header extends PureComponent<PropType> {
 
                 <div className="contentWrap86">
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
-                        
+
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                             <ArticleNavigation navOptions={navOptions} />
                         </Grid>
@@ -123,16 +122,16 @@ export default class Header extends PureComponent<PropType> {
                         <Grid item xs={8} md={6} lg={6} >
                             <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
                                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                                    <img src={water} className="svgIcon" alt="water" />
-                                </Grid>
-                                <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                     <img src={grain} className="svgIcon" alt="grain" />
                                 </Grid>
                                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                                    <img src={hops} className="svgIcon" alt="hops" />
+                                    <img src={water} className="svgIcon" alt="water" />
                                 </Grid>
                                 <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                     <img src={yeast} className="svgIcon" alt="yeast" />
+                                </Grid>
+                                <Grid item xs={12} md={6} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
+                                    <img src={hops} className="svgIcon" alt="hops" />
                                 </Grid>
                             </Grid>
 

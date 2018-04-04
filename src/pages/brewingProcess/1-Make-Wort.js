@@ -22,7 +22,7 @@ import backgroundImage from '../../imgs/milledGrains.jpg';
 
 import water from '../../imgs/water.svg';
 import hops from '../../imgs/hop.svg';
-import grain from '../../imgs/grain.svg';
+import grain from '../../imgs/grain2.svg';
 import yeast from '../../imgs/yeast3.svg';
 
 // const Water = require('../../imgs/water.svg');
@@ -119,19 +119,19 @@ export default class Header extends PureComponent<PropType> {
                                         activate enzymes in the grain which help convert the starch in the grain into simple sugars for the yeast to eat.
                             </Typography>
                         </Grid>
-                        <Grid item xs={8} md={6} lg={6} >
+                        <Grid item xs={12} md={6} lg={6} >
                             <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
-                                    <img src={water} className="svgIcon" alt="water" />
-                                </Grid>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
+                                <Grid item xs={6} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
                                     <img src={grain} className="svgIcon" alt="grain" />
                                 </Grid>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
+                                <Grid item xs={6} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
                                     <img src={hops} className="svgIcon" alt="hops" />
                                 </Grid>
-                                <Grid item xs={12} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>                                    
+                                <Grid item xs={6} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>                                    
                                     <img src={yeast} className="svgIcon" alt="yeast" />
+                                </Grid>
+                                <Grid item xs={6} md={6} style={{backgroundColor:'white',height:'100%',padding:0}}>
+                                    <img src={water} className="svgIcon" alt="water" />
                                 </Grid>
                             </Grid>
                        

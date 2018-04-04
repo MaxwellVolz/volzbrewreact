@@ -73,7 +73,6 @@ $ npm start
 3. Change references to 'className={styles.root}' to 'style={styles.elementName}'
 4. Verify import statements for MaterialUI dependencies
 
-<<<<<<< Updated upstream
 #### Iterators, Props, and an explanation of articleNavigation.js and Props in ReactJS
 
 Props are creation parameters that customize components
@@ -86,18 +85,17 @@ Using '/brewingProcess/1-Make-Wort.js' as an example.
 2. At the start of render() 'var navOptions = {}' sets up the props that will be passed to the component
 3. Pass the props to <ArticleNavigation navOptions={navOptions}/> 
 
-In articleNavigation
+In article Navigation
 
 1. {this.props.navOptions} refers to the props that were passed to the component.
 2. A map() function iterates over the props and generates the DOM elements for the navigation.
 3. A terniary operator checks 'isActive' to determine what class to apply to the link container.
-=======
+
 #### SVG Guide
 
 * SVGs are saved in '/imgs'
 * When saving new SVGs or making changes copying the source code of the SVG and paste to: [SVGOMG]
 * Overwrite existing SVG code with newly minified SVG code
->>>>>>> Stashed changes
 
 ### Compiling
 

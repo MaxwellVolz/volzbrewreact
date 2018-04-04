@@ -6,9 +6,8 @@ Volzbrew is a ReactJS and MaterialUI based, mobile-ready, website and blog.
 # New Features!
 
   - General Setup 
-  - Development Section(in progress) 
-  - Compile Section
-  - Push to Git Section 
+  - Development Section(WIP)
+  - SVG Guide 
   
 ### Tech
 
@@ -74,6 +73,7 @@ $ npm start
 3. Change references to 'className={styles.root}' to 'style={styles.elementName}'
 4. Verify import statements for MaterialUI dependencies
 
+<<<<<<< Updated upstream
 #### Iterators, Props, and an explanation of articleNavigation.js and Props in ReactJS
 
 Props are creation parameters that customize components
@@ -91,6 +91,13 @@ In articleNavigation
 1. {this.props.navOptions} refers to the props that were passed to the component.
 2. A map() function iterates over the props and generates the DOM elements for the navigation.
 3. A terniary operator checks 'isActive' to determine what class to apply to the link container.
+=======
+#### SVG Guide
+
+* SVGs are saved in '/imgs'
+* When saving new SVGs or making changes copying the source code of the SVG and paste to: [SVGOMG]
+* Overwrite existing SVG code with newly minified SVG code
+>>>>>>> Stashed changes
 
 ### Compiling
 
@@ -139,3 +146,4 @@ Coming Soon!
    [node.js]: <http://nodejs.org>
    [ReactJS]: <https://github.com/facebook/create-react-app>
    [MaterialUI]: <https://material-ui-next.com/getting-started/usage/>
+   [SVGOMG]: <https://jakearchibald.github.io/svgomg/>

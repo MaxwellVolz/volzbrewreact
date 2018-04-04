@@ -32,7 +32,7 @@ const styles = {
         backgroundAttachment: 'fixed', //optional
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '680px'
+        height: '660px'
     },
     mainHeaderText: {
         textAlign: 'center',
@@ -83,18 +83,18 @@ const styles = {
     },
     card: {
         maxWidth: 345,
-        margin:'auto'
+        margin: 'auto'
     },
-    cardImg1:{
-        backgroundImage: `url(${mash})`,        
+    cardImg1: {
+        backgroundImage: `url(${mash})`,
         height: 200,
     },
-    cardImg2:{
-        backgroundImage: `url(${brewpot})`,        
+    cardImg2: {
+        backgroundImage: `url(${brewpot})`,
         height: 200,
     },
-    cardImg3:{
-        backgroundImage: `url(${brewbros})`,        
+    cardImg3: {
+        backgroundImage: `url(${brewbros})`,
         height: 200,
     },
 
@@ -111,13 +111,15 @@ export default class Header extends PureComponent<PropType> {
 
 
                 <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
+
                     <Grid item xs={12} style={styles.headerGrid}>
-                        <div style={styles.logoContainer} ><img style={styles.logoSVG} src={`${logoSVG}`} /></div>
+                        <div style={styles.logoContainer} >
+                        </div>
 
                         {/* <Typography variant="display2" style={styles.mainHeaderText}>Volzbrew</Typography> */}
-                        <Typography variant="headline" style={styles.headerText}>
-                        <br />
-                        Learn how to make great beer.
+                        <Typography variant="title" style={styles.headerText}>
+                            <br />
+                            We want to help you brew great beer.
                         </Typography>
 
                         {/* <Typography variant="subheading" style={styles.headerText}>
@@ -140,7 +142,18 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap">
 
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
-                    <Grid item xs={12} md={4}>
+                        
+                        <Grid item xs={12}>
+                            <Typography variant="headline" component="h2">
+                                We want to help you brew great beer.
+                            </Typography>
+                            <Typography variant="subheading">
+
+                                Our goal is to provide the best home brewing information conveniently organized in one place. From basic information like starting with equipment that will last and allow you to advance, to saving you time and money, and sparing you headaches.
+                            </Typography>
+
+                        </Grid>
+                        <Grid item xs={12} md={4}>
                             <div>
                                 <Card style={styles.card}>
                                     <CardMedia
@@ -180,7 +193,7 @@ export default class Header extends PureComponent<PropType> {
                                             Brewing Equipment
                                         </Typography>
                                         <Typography component="p">
-                                            The tools we have, use, and recommend. 
+                                            The tools we have, use, and recommend.
                                     </Typography>
                                     </CardContent>
                                     <CardActions>
@@ -209,7 +222,7 @@ export default class Header extends PureComponent<PropType> {
                                         <Typography component="p">
                                             How much does brewing cost?
                                             <br />
-                                             Is it worth it?                                            
+                                            Is it worth it?
                                     </Typography>
                                     </CardContent>
                                     <CardActions>
@@ -225,7 +238,7 @@ export default class Header extends PureComponent<PropType> {
                         </Grid>
                     </Grid>
 
-                    
+
 
                 </div>
 

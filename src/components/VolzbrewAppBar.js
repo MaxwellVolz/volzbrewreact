@@ -11,16 +11,27 @@ import Typography from 'material-ui/Typography';
 
 import backgroundImage from '../imgs/milledGrains.jpg';
 
+import logoSVG from '../imgs/logoNoTextW.svg';
+
+
 const styles = {
     appBar: {
-        display: 'flex',
-        justifyContent: 'flex-end',
         paddingRight: 17,
     },
     buttonText: {
         color: 'white',
         textDecoration: 'none',
+    },
+    logo: {
+        float:'left'
+    },
+    navBarOptions: {
+        float:'right'
+    },
+    logoSVG:{
+        height: 36
     }
+    
 };
 
 export default class VolzbrewAppBar extends PureComponent<PropType> {
@@ -29,26 +40,34 @@ export default class VolzbrewAppBar extends PureComponent<PropType> {
 
             <AppBar position="fixed">
                 <div style={styles.appBar}>
-                    <Link to="/">
-                        <Button style={styles.buttonText}>
-                            Home
-                        </Button>
+
+                    <Link to="/" style={styles.logo}>
+                        <img style={styles.logoSVG} src={`${logoSVG}`} />
                     </Link>
-                    <Link to="/brew">
-                        <Button style={styles.buttonText}>
-                            Brew
-                        </Button>
-                    </Link>
-                    <Link to="/about">
-                        <Button style={styles.buttonText}>
-                            <div>About</div>
-                        </Button>
-                    </Link>
-                    <Link to="/blog">
+
+                    <Link to="/blog" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             <div>Blog</div>
                         </Button>
                     </Link>
+                    <Link to="/about" style={styles.navBarOptions}>
+                        <Button style={styles.buttonText}>
+                            <div>About</div>
+                        </Button>
+                    </Link>
+                    <Link to="/brewingProcess" style={styles.navBarOptions}>
+                        <Button style={styles.buttonText}>
+                            Brew
+                        </Button>
+                    </Link>
+                    <Link to="/" style={styles.navBarOptions}>
+                        <Button style={styles.buttonText}>
+                            Home
+                        </Button>
+                    </Link>
+                    
+                    
+                   
                 </div>
             </AppBar>
 

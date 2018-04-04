@@ -97,7 +97,7 @@ export default class Header extends PureComponent<PropType> {
                 <ScrollToTopOnMount />
 
 
-                <div className="contentWrap86">
+                <div className="contentWrap100">
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
 
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>

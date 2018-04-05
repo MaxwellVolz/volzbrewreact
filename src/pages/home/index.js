@@ -116,11 +116,29 @@ export default class Header extends PureComponent<PropType> {
                         <div style={styles.logoContainer} >
                         </div>
 
+                        <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
+                            <Grid item xs={2}>
+                            
+                            </Grid>
+                            <Grid item xs={4}>
+                            <Typography variant="display2" component="h2" style={{color:'white'}}>
+                                Brew Beer
+                            </Typography>
+                            </Grid>
+                            <Grid item xs={6}>
+                            <Typography variant="headline" component="h2" style={{color:'white',textDecoration:'underline'}}>
+                                Articles
+                            </Typography>
+                            <Typography variant="headline" component="h2" style={{color:'white'}}>
+                                How to Brew
+                            </Typography>
+                            <Typography variant="headline" component="h2" style={{color:'white'}}>
+                                How to Brew
+                            </Typography>
+                            </Grid>
+                            </Grid>
                         {/* <Typography variant="display2" style={styles.mainHeaderText}>Volzbrew</Typography> */}
-                        <Typography variant="title" style={styles.headerText}>
-                            <br />
-                            We want to help you brew great beer.
-                        </Typography>
+                       
 
                         {/* <Typography variant="subheading" style={styles.headerText}>
                         Making good beer cheap
@@ -144,11 +162,11 @@ export default class Header extends PureComponent<PropType> {
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
                         
                         <Grid item xs={12}>
+                            
                             <Typography variant="headline" component="h2">
                                 We want to help you brew great beer.
                             </Typography>
                             <Typography variant="subheading">
-
                                 Our goal is to provide the best home brewing information conveniently organized in one place. From basic information like starting with equipment that will last and allow you to advance, to saving you time and money, and sparing you headaches.
                             </Typography>
 

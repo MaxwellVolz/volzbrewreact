@@ -10,6 +10,7 @@ import theme from '../../style/theme';
 import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
+import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 
 import List, { ListItem, ListItemText } from 'material-ui/List';
 
@@ -27,6 +28,7 @@ import hops from '../../imgs/hop.svg';
 import grain from '../../imgs/grain2.svg';
 import yeast from '../../imgs/yeast3.svg';
 import beer from '../../imgs/beer.svg';
+import brewProcess2 from '../../imgs/brewProcess2Anim.svg';
 
 
 // const Water = require('../../imgs/water.svg');
@@ -139,21 +141,53 @@ export default class Header extends PureComponent<PropType> {
                                 The heat is increased to bring the wort to a nice, rolling boil. This step sanitizes the wort and initiates the hop-additions phase in brewing. 
                                 <br />
                                 <br />
-                                Hops are used for their bittering, flavoring, and aromatic qualities. Brewers add them to the wort to counteract beer’s natural sweetness. Hops are added at roughly the following times during the boil:
+                                Hops are used for their bittering, flavoring, and aromatic qualities. Brewers add them to the wort to counteract beer’s natural sweetness. 
                                 <br />
                                 <br />
-                                <i>Bittering Hops</i> - boiled for <b>60 minutes</b> (sometimes up to 90 mins) to extract resins which provide bitterness
+                                Hops are added at roughly the following times during the boil:
+                                
                                 <br />
-	                            <i>Flavoring Hops</i> - boiled for <b>15 minutes</b> or less to extract oils for taste
                                 <br />
-	                            <i>Finishing Hops</i> - boiled for <b>5 minutes</b> or less, or added after the boil, primarily for adding aroma
+                                </Typography>
+                                <Paper>
+                                    <Table>
+                                        <TableHead>
+                                        <TableRow>
+                                            <TableCell>Hop Type</TableCell>
+                                            <TableCell numeric>Boil Time</TableCell>
+                                            <TableCell>Purpose</TableCell>
+                                        </TableRow>
+                                        </TableHead>
+                                        <TableBody>
+                                            <TableRow>
+                                                <TableCell>Bittering</TableCell>
+                                                <TableCell numeric>60 - 90 minutes</TableCell>
+                                                <TableCell>extract resins which provide bitterness</TableCell>
+                                            </TableRow>
+                                            <TableRow>
+                                                <TableCell>Flavoring</TableCell>
+                                                <TableCell numeric>15 minutes</TableCell>
+                                                <TableCell>extract resins which provide bitterness</TableCell>
+                                            </TableRow>
+                                            <TableRow>
+                                                <TableCell>Finishing</TableCell>
+                                                <TableCell numeric>&lt;5 minutes</TableCell>
+                                                <TableCell>primarily for adding aroma</TableCell>
+                                            </TableRow>
+                                        </TableBody>
+                                    </Table>
+                                </Paper>
+                                <Typography variant="subheading" gutterBottom>
+    
+
+
                                 <br />
                                 <br />
                                 Note: Hop additions, both the amounts and the times they’re added, may vary widely depending on the recipe and beer style. For example a bitter IPA will typically have a relatively high amount of hops added at each stage during the boil with even more added later in the process (<i>see Dry Hopping</i>).
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
-                            <img src={beer} className="svgIcon" alt="beer" />
+                            <img src={brewProcess2} className="svgIcon" alt="brewProcess2" />
                         </Grid>
                     </Grid>
                 </div>

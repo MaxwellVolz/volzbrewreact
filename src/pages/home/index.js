@@ -38,10 +38,7 @@ const styles = {
         textAlign: 'center',
         color: 'white'
     },
-    logoContainer: {
-        paddingTop: 180,
-        textAlign: 'center'
-    },
+    
     logoSVG: {
         width: '100%',
         maxWidth: '637px'
@@ -108,27 +105,27 @@ export default class Header extends PureComponent<PropType> {
         return (
 
             <MuiThemeProvider theme={theme}>
-
+            
 
                 <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
 
+               
+                    
                     <Grid item xs={12} style={styles.headerGrid}>
-                        <div style={styles.logoContainer} >
-                        </div>
+                        
 
-                        <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
-                            <Grid item xs={2}>
+                        <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0, paddingTop: 230, }}>
                             
-                            </Grid>
-                            <Grid item xs={4}>
-                            <Typography variant="display2" component="h2" style={{color:'white'}}>
+                            <Grid item xs={3}>
+                            <Typography variant="display2" component="h2" style={{color:'white',textAlign:'center'}}>
                                 Brew Beer
                             </Typography>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={4} style={{color:'white',textAlign:'right'}}>
                             <Typography variant="headline" component="h2" style={{color:'white',textDecoration:'underline'}}>
                                 Articles
                             </Typography>
+
                             <Typography variant="headline" component="h2" style={{color:'white'}}>
                                 How to Brew
                             </Typography>
@@ -146,7 +143,7 @@ export default class Header extends PureComponent<PropType> {
                     </Grid>
 
                 </Grid>
-
+            
                 {/* <div className="contentWrap">
                     <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
                         <Grid item xs={12} style={{ textAlign: 'center' }}>

@@ -29,7 +29,9 @@ const styles = {
         float:'right'
     },
     logoSVG:{
-        height: 36
+        marginTop: '4px',
+        marginLeft:'4px',
+        height: 28
     }
     
 };
@@ -44,18 +46,17 @@ export default class VolzbrewAppBar extends PureComponent<PropType> {
                     <Link to="/" style={styles.logo}>
                         <img style={styles.logoSVG} src={`${logoSVG}`} />
                     </Link>
-
-                    <Link to="/blog" style={styles.navBarOptions}>
+                    {/* <Link to="/blog" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             <div>Blog</div>
                         </Button>
-                    </Link>
+                    </Link> */}
                     <Link to="/about" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             <div>About</div>
                         </Button>
                     </Link>
-                    <Link to="/brewingProcess" style={styles.navBarOptions}>
+                    <Link to="/brew" style={styles.navBarOptions}>
                         <Button style={styles.buttonText}>
                             Brew
                         </Button>

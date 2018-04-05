@@ -16,6 +16,8 @@ import List, { ListItem, ListItemText } from 'material-ui/List';
 import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
+import BreadCrumbs from '../../components/BreadCrumbs';
+
 
 import backgroundImage from '../../imgs/milledGrains.jpg';
 
@@ -62,7 +64,25 @@ const styles = {
 export default class Header extends PureComponent<PropType> {
 
     render() {
-        var navOptions = [
+        let breadCrumbs = [
+            {
+                name: 'Volzbrew',
+                url: '/',
+            },
+            {
+                name: 'Brew',
+                url: '/brew',
+            },
+            {
+                name: 'Beginner',
+                url: '/brew',
+            },
+            {
+                name: 'Brewing Process',
+                url: '/brewingProcess',
+            }
+        ]
+        let navOptions = [
             {
                 name: 'Overview',
                 url: '/brewingProcess',
@@ -99,8 +119,11 @@ export default class Header extends PureComponent<PropType> {
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
 
                         <Grid item xs={12} style={{ marginLeft:'12px',height: '100%' }}>
-                            <Typography variant="body2">Volzbrew >> Learn >> Beginner >> Brewing Process</Typography>
-                            <Typography variant="display1">Brewing Process</Typography>             
+                        
+                            <Typography variant="body2">
+                                <BreadCrumbs breadCrumbs={breadCrumbs}/>
+                            </Typography>
+                            <Typography variant="display2">Brewing Process</Typography>             
                         </Grid>
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
                                                     
@@ -111,6 +134,9 @@ export default class Header extends PureComponent<PropType> {
                         <Grid item xs={8} md={4} lg={4} >
                         <Typography variant="subheading" gutterBottom>
                                         {/* Volzbrew is dedicated to teaching an affordable way to brew at home. */}
+                                        {/* <b>Overview</b>
+                                        <br />
+                                        <br /> */}
                                         Homebrewing is NOT hard.
                                         <br />
                                         <br />
@@ -129,13 +155,13 @@ export default class Header extends PureComponent<PropType> {
                                         <br />
                                         <br />
                                         There are 5 main steps in the brewing process:
-                                        <ol>
+                                        {/* <ol>
                                             <li>Make Wort</li>
                                             <li>The Boil</li>
                                             <li>Cooling the Wort and Pitching the Yeast</li>
                                             <li>Fermentation</li>
                                             <li> Carbonation</li>
-                                        </ol>
+                                        </ol> */}
 
                                     </Typography>
                         </Grid>

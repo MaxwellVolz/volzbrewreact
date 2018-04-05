@@ -16,6 +16,7 @@ import List, { ListItem, ListItemText } from 'material-ui/List';
 import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
+import BreadCrumbs from '../../components/BreadCrumbs';
 
 
 
@@ -62,6 +63,24 @@ const styles = {
 
 export default class Header extends PureComponent<PropType> {
     render() {
+        let breadCrumbs = [
+            {
+                name: 'Volzbrew',
+                url: '/',
+            },
+            {
+                name: 'Brew',
+                url: '/brew',
+            },
+            {
+                name: 'Beginner',
+                url: '/brew',
+            },
+            {
+                name: 'Brewing Process',
+                url: '/brewingProcess',
+            }
+        ]
         var navOptions = [
             {
                 name: 'Overview',
@@ -99,16 +118,24 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap100">
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
 
+                       <Grid item xs={12} style={{ marginLeft:'12px',height: '100%' }}>
+                       <Typography variant="body2">
+                                <BreadCrumbs breadCrumbs={breadCrumbs}/>
+                            </Typography>
+                            <Typography variant="display2">Brewing Process</Typography>             
+                        </Grid>
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                            <ArticleNavigation navOptions={navOptions} />
+                                                    
+                            <ArticleNavigation navOptions={navOptions}/>
+
                         </Grid>
 
-                        <Grid item xs={7} md={4} lg={4} >
+                        <Grid item xs={8} md={4} lg={4} >
+                        <Typography variant="display1" gutterBottom>Step 2: The Boil</Typography>
+                            
                             <Typography variant="subheading" gutterBottom>
 
-                                <b>Step 2: The Boil</b>
-                                <br />
-                                <br />
+          
                                 The heat is increased to bring the wort to a nice, rolling boil. This step sanitizes the wort and initiates the hop-additions phase in brewing. 
                                 <br />
                                 <br />
@@ -154,7 +181,7 @@ export default class Header extends PureComponent<PropType> {
                             <Link to="/brewingProcess">
 
                                 <Button variant="raised">
-                                    Cool Wort
+                                    Step 3: Cool Wort
 
                             </Button>
                             </Link>

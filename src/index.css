@@ -26,6 +26,10 @@ a, a:visited, a:hover, a:active {
   background-color:#3f50b5;
 }
 
+.colorWrap {
+  background-color: lightgrey;
+}
+
 .contentWrap {
   width: 66vw;
   margin: 0 auto;
@@ -48,6 +52,7 @@ a, a:visited, a:hover, a:active {
   background-color:palegreen !important;
 }
 
+
 @media only screen and (max-width: 768px) {
   .contentWrap {
     width: 86vw;
@@ -68,7 +73,7 @@ a, a:visited, a:hover, a:active {
   text-align:center;
   background-color:white;
   margin: 40px 0;
-  padding:60px
+  padding: 60px
 }
 
 .svgIcon{

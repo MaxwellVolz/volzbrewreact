@@ -16,6 +16,7 @@ import List, { ListItem, ListItemText } from 'material-ui/List';
 import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
+import BreadCrumbs from '../../components/BreadCrumbs';
 
 import backgroundImage from '../../imgs/milledGrains.jpg';
 
@@ -62,6 +63,24 @@ const styles = {
 
 export default class Header extends PureComponent<PropType> {
     render() {
+        let breadCrumbs = [
+            {
+                name: 'Volzbrew',
+                url: '/',
+            },
+            {
+                name: 'Brew',
+                url: '/brew',
+            },
+            {
+                name: 'Beginner',
+                url: '/brew',
+            },
+            {
+                name: 'Brewing Process',
+                url: '/brewingProcess',
+            }
+        ]
         var navOptions = [
             {
                 name: 'Overview',
@@ -100,28 +119,34 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap100">
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
 
+                        <Grid item xs={12} style={{ marginLeft:'12px',height: '100%' }}>
+                        <Typography variant="body2">
+                                <BreadCrumbs breadCrumbs={breadCrumbs}/>
+                            </Typography>
+                            <Typography variant="display2">Brewing Process</Typography>             
+                        </Grid>
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                            <ArticleNavigation navOptions={navOptions} />
+                                                    
+                            <ArticleNavigation navOptions={navOptions}/>
+
                         </Grid>
 
-                        <Grid item xs={7} md={4} lg={4} >
+                        <Grid item xs={8} md={4} lg={4} >
+                        <Typography variant="display1" gutterBottom>Step 5: Carbonation</Typography>
+                            
                             <Typography variant="subheading" gutterBottom>
 
-                                <b>Step 5: Carbonation</b>
+                                The last step is to carbonate the <b>beer</b> (BEER!). Carbonation is crucial as the tiny bubbles impact aroma, mouthfeel, perceived body, and really just make beer taste refreshing!
                                 <br />
                                 <br />
-
-                                <b>Wort</b> is unfermented beer - a mixture of water and sugar that’s been extracted from grains which ultimately serves as food for the yeast to consume and create <b>alcohol</b>.
-                            <br />
+                                This can be done easily by transferring the beer to a keg, purging the oxygen, and adding CO2 (linky).
                                 <br />
-                                Homebrewers typically make wort in one of two ways: combining <b>malt</b> extract with water, or steeping milled grains to extract their sugars (sort of like making tea).
-                            <br />
                                 <br />
-                                <b><i>Extract Brewing</i></b>: Add liquid or dry malt extract to heated water
-                                    <br />
-                                <b><i>All Grain Brewing</i></b>: Add crushed (milled), malted grains to water, heated to ~155 degrees and left to , to
-                                activate enzymes in the grain which help convert the starch in the grain into simple sugars for the yeast to eat.
-                                    </Typography>
+                                <i>Honestly, we haven’t bottled our beer. We started out with ‘Corny’ kegs and they’ve been great. We cannot recommend enough how awesome kegs are: <b>Kegs are awesome!</b></i>
+                                <br />
+                                <br />
+                                If you don’t have a keg you basically clean 50+ bottles (can’t use the dishwasher), add sugar to your beer (more food for yeast to create carbonation), then bottle and cap the beer and wait another 2 weeks.
+                                </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
                             <img src={beer} className="svgIcon" alt="beer" />
@@ -149,11 +174,9 @@ export default class Header extends PureComponent<PropType> {
 
                     <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
                         <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <Link to="/brewingProcess">
-
+                            <Link to="/brew">
                                 <Button variant="raised">
-                                    The Brewing Process
-
+                                    More Brewing Tutorials
                             </Button>
                             </Link>
 

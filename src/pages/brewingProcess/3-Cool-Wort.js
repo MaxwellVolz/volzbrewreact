@@ -16,6 +16,7 @@ import List, { ListItem, ListItemText } from 'material-ui/List';
 import VolzbrewAppBar from '../../components/VolzbrewAppBar';
 import ScrollToTopOnMount from '../../components/ScrollToTopOnMount';
 import ArticleNavigation from '../../components/ArticleNavigation';
+import BreadCrumbs from '../../components/BreadCrumbs';
 
 
 
@@ -62,6 +63,24 @@ const styles = {
 
 export default class Header extends PureComponent<PropType> {
     render() {
+        let breadCrumbs = [
+            {
+                name: 'Volzbrew',
+                url: '/',
+            },
+            {
+                name: 'Brew',
+                url: '/brew',
+            },
+            {
+                name: 'Beginner',
+                url: '/brew',
+            },
+            {
+                name: 'Brewing Process',
+                url: '/brewingProcess',
+            }
+        ]
         var navOptions = [
             {
                 name: 'Overview',
@@ -99,16 +118,23 @@ export default class Header extends PureComponent<PropType> {
                 <div className="contentWrap100">
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 40 }}>
 
+                       <Grid item xs={12} style={{ marginLeft:'12px',height: '100%' }}>
+                       <Typography variant="body2">
+                                <BreadCrumbs breadCrumbs={breadCrumbs}/>
+                            </Typography>
+                            <Typography variant="display2">Brewing Process</Typography>             
+                        </Grid>
                         <Grid item xs={4} md={2} lg={2} style={{ backgroundColor: 'white', height: '100%', padding: 0 }}>
-                            <ArticleNavigation navOptions={navOptions} />
+                                                    
+                            <ArticleNavigation navOptions={navOptions}/>
+
                         </Grid>
 
-                        <Grid item xs={7} md={4} lg={4} >
+                        <Grid item xs={8} md={4} lg={4} >
+                        <Typography variant="display1" gutterBottom>Step 3: Pitching Yeast</Typography>
+                            
                             <Typography variant="subheading" gutterBottom>
 
-                                <b>Step 3: Pitching Yeast</b>
-                                <br />
-                                <br />
 
                                 Cooling the wort as quickly as possible after the boil and prior to transferring the liquid into a fermentation vessel, and pitching (i.e. adding) the yeast, creates an ideal environment for yeast to thrive in. 
                                 <br />
@@ -120,6 +146,13 @@ Rapidly cooling the wort also has many other benefits such as aiding with beer c
 <br />
                                 <br />
 Wort chillers are extremely effective for rapidly cooling the wort under 80°F. Once cooled, the wort is then splashed into a fermentation bucket or glass carboy and mixed with the yeast. Splashing the wort helps re-oxygenate the liquid, as boiling removes oxygen, and the yeast will utilize this oxygen while converting wort into <b>BEER!</b>
+<br />
+<br />
+Transferring wort to fermentation bucket (not a golden shower)
+<br />
+<br />
+Next, the fermentation vessel is swirled, shaken, and sealed with an airlock. Airlocks filled with sanitizer (preferred) or vodka (works in a pinch; free from impurities) provide a liquid barrier which allow yeast byproducts to escape while prohibiting contaminants from getting in.
+
 
                                     </Typography>
                         </Grid>
@@ -152,7 +185,7 @@ Wort chillers are extremely effective for rapidly cooling the wort under 80°F. 
                             <Link to="/brewingProcess">
 
                                 <Button variant="raised">
-                                    The Brewing Process
+                                    Step 4: Fermentation
 
                             </Button>
                             </Link>

@@ -11,7 +11,7 @@ import Typography from 'material-ui/Typography';
 
 import backgroundImage from '../imgs/milledGrains.jpg';
 
-import logoSVG from '../imgs/logoNoTextW.svg';
+import logoSVG from '../imgs/svgs/logoNoTextW.svg';
 
 
 const styles = {

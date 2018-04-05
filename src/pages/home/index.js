@@ -23,7 +23,7 @@ import brewpot from '../../imgs/brewPot1.jpg';
 import brewbros from '../../imgs/brewBros1.jpg';
 
 
-import logoSVG from '../../imgs/logoW.svg';
+import logoSVG from '../../imgs/svgs/logoW.svg';
 
 
 const styles = {
@@ -306,7 +306,7 @@ export default class Header extends PureComponent<PropType> {
                     </div>
 
                     <div className="contentWrap">
-                        <Grid container spacing={8} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
+                        <Grid container spacing={8} justify="center" style={{ flexGrow: '1', marginTop: 40, marginBottom: 40 }}>
 
                             <Grid item xs={12} sm={12} md={6} lg={4}>
                                 <Paper style={styles.paper}>
@@ -374,8 +374,9 @@ export default class Header extends PureComponent<PropType> {
                         </Grid>
                     </div>
 
+                    <div className="colorWrap">
                     <div className="contentWrap">
-                        <Grid container spacing={40} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
+                        <Grid container spacing={40} justify="center" style={{ flexGrow: '1', marginBottom: 40 }}>
 
                             <Grid item xs={12} style={{ textAlign: 'center' }}>
                                 <Typography variant="display1" gutterBottom style={{ textAlign: 'center', margin: '40px 0' }}>
@@ -401,11 +402,12 @@ export default class Header extends PureComponent<PropType> {
                             </Grid>
                         </Grid>
                     </div>
+                    </div>
 
                     <div className="contentWrap">
 
 
-                        <Grid container spacing={40} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
+                        <Grid container spacing={40} justify="center" style={{ flexGrow: '1', marginBottom: 40 }}>
 
                             <Grid item xs={12} style={{ textAlign: 'center' }}>
                                 <Typography variant="display1" gutterBottom style={{ textAlign: 'center', margin: '40px 0' }}>
@@ -458,9 +460,10 @@ export default class Header extends PureComponent<PropType> {
 
 
 
+                    <div className="colorWrap">
                     <div className="contentWrap">
 
-                        <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
+                        <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginBottom: 40 }}>
                             <Grid item xs={12}>
                                 <Typography variant="display1" gutterBottom style={{ textAlign: 'center', margin: '40px 0' }}>
                                     Display1
@@ -474,7 +477,7 @@ export default class Header extends PureComponent<PropType> {
                     </div>
                     <div className="contentWrap">
 
-                        <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginTop: '40px' }}>
+                        <Grid container spacing={0} justify="center" style={{ flexGrow: '1', marginBottom: 40 }}>
                             <Grid item xs={12} style={{ textAlign: 'center', marginBottom: '40px' }}>
                                 <Button variant="raised" >
                                     Default
@@ -482,6 +485,7 @@ export default class Header extends PureComponent<PropType> {
                             </Grid>
                         </Grid>
 
+                    </div>
                     </div>
             </MuiThemeProvider>
 

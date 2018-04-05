@@ -21,11 +21,11 @@ import BreadCrumbs from '../../components/BreadCrumbs';
 
 import backgroundImage from '../../imgs/milledGrains.jpg';
 
-import water from '../../imgs/water.svg';
-import hops from '../../imgs/hop.svg';
-import grain from '../../imgs/grain2.svg';
-import yeast from '../../imgs/yeast3.svg';
-import beer from '../../imgs/beer.svg';
+import water from '../../imgs/svgs/water.svg';
+import hops from '../../imgs/svgs/hop.svg';
+import grain from '../../imgs/svgs/grain2.svg';
+import yeast from '../../imgs/svgs/yeast3.svg';
+import beer from '../../imgs/svgs/beer.svg';
 
 
 // const Water = require('../../imgs/water.svg');

@@ -158,12 +158,12 @@ export default class Header extends PureComponent<PropType> {
 
                     <Grid container spacing={24} justify="center" style={{ flexGrow: '1', marginTop: 0 }}>
                         
-                        <Grid item xs={12}>
+                        <Grid item xs={12} style={{  marginTop:40,marginBottom:80 }}>
                             
-                            <Typography variant="headline" component="h2">
+                            <Typography variant="display3" component="h2">
                                 We want to help you brew great beer.
                             </Typography>
-                            <Typography variant="subheading">
+                            <Typography variant="headline">
                                 Our goal is to provide the best home brewing information conveniently organized in one place. From basic information like starting with equipment that will last and allow you to advance, to saving you time and money, and sparing you headaches.
                             </Typography>
 

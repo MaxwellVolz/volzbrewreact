@@ -106,20 +106,21 @@ export default class Header extends PureComponent<PropType> {
                         <Grid item xs={7} md={4} lg={4} >
                             <Typography variant="subheading" gutterBottom>
 
-                                <b>Step 3: Cool Wort</b>
+                                <b>Step 3: Pitching Yeast</b>
                                 <br />
                                 <br />
 
-                                <b>Wort</b> is unfermented beer - a mixture of water and sugar that’s been extracted from grains which ultimately serves as food for the yeast to consume and create <b>alcohol</b>.
-                            <br />
+                                Cooling the wort as quickly as possible after the boil and prior to transferring the liquid into a fermentation vessel, and pitching (i.e. adding) the yeast, creates an ideal environment for yeast to thrive in. 
                                 <br />
-                                Homebrewers typically make wort in one of two ways: combining <b>malt</b> extract with water, or steeping milled grains to extract their sugars (sort of like making tea).
-                            <br />
                                 <br />
-                                <b><i>Extract Brewing</i></b>: Add liquid or dry malt extract to heated water
-                                    <br />
-                                <b><i>All Grain Brewing</i></b>: Add crushed (milled), malted grains to water, heated to ~155 degrees and left to , to
-                                activate enzymes in the grain which help convert the starch in the grain into simple sugars for the yeast to eat.
+Rapidly cooling the wort also has many other benefits such as aiding with beer clarity, reducing DMS (dimethyl sulfide), which can add a cooked- or canned-corn like aroma to beer, and helps decrease the risk of contamination. This is the time when the future <b>beer</b> (woo! future beer!) is most vulnerable to bacteria and other microorganisms (e.g. nasty bugs). 
+<br />
+                                <br />
+                                <i><b>Sanitization</b> is extremely important at this stage to help ward off infection which can lead to off-flavors in the finished beer (gross, no thanks!) Anything that comes in contact with wort after the boil <b>must</b> be THOROUGHLY CLEANED AND SANITIZED. (linky)</i>
+<br />
+                                <br />
+Wort chillers are extremely effective for rapidly cooling the wort under 80°F. Once cooled, the wort is then splashed into a fermentation bucket or glass carboy and mixed with the yeast. Splashing the wort helps re-oxygenate the liquid, as boiling removes oxygen, and the yeast will utilize this oxygen while converting wort into <b>BEER!</b>
+
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >

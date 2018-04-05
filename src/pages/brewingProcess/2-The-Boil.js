@@ -109,17 +109,20 @@ export default class Header extends PureComponent<PropType> {
                                 <b>Step 2: The Boil</b>
                                 <br />
                                 <br />
-
-                                <b>Wort</b> is unfermented beer - a mixture of water and sugar that’s been extracted from grains which ultimately serves as food for the yeast to consume and create <b>alcohol</b>.
-                            <br />
+                                The heat is increased to bring the wort to a nice, rolling boil. This step sanitizes the wort and initiates the hop-additions phase in brewing. 
                                 <br />
-                                Homebrewers typically make wort in one of two ways: combining <b>malt</b> extract with water, or steeping milled grains to extract their sugars (sort of like making tea).
-                            <br />
                                 <br />
-                                <b><i>Extract Brewing</i></b>: Add liquid or dry malt extract to heated water
-                                    <br />
-                                <b><i>All Grain Brewing</i></b>: Add crushed (milled), malted grains to water, heated to ~155 degrees and left to , to
-                                activate enzymes in the grain which help convert the starch in the grain into simple sugars for the yeast to eat.
+                                Hops are used for their bittering, flavoring, and aromatic qualities. Brewers add them to the wort to counteract beer’s natural sweetness. Hops are added at roughly the following times during the boil:
+                                <br />
+                                <br />
+                                <i>Bittering Hops</i> - boiled for <b>60 minutes</b> (sometimes up to 90 mins) to extract resins which provide bitterness
+                                <br />
+	                            <i>Flavoring Hops</i> - boiled for <b>15 minutes</b> or less to extract oils for taste
+                                <br />
+	                            <i>Finishing Hops</i> - boiled for <b>5 minutes</b> or less, or added after the boil, primarily for adding aroma
+                                <br />
+                                <br />
+                                Note: Hop additions, both the amounts and the times they’re added, may vary widely depending on the recipe and beer style. For example a bitter IPA will typically have a relatively high amount of hops added at each stage during the boil with even more added later in the process (<i>see Dry Hopping</i>).
                                     </Typography>
                         </Grid>
                         <Grid item xs={8} md={6} lg={6} >
@@ -151,7 +154,7 @@ export default class Header extends PureComponent<PropType> {
                             <Link to="/brewingProcess">
 
                                 <Button variant="raised">
-                                    The Brewing Process
+                                    Cool Wort
 
                             </Button>
                             </Link>

@@ -139,6 +139,11 @@ export default class Header extends PureComponent<PropType> {
                                         Equipment
                                     </Typography>
                                 </Link>
+                                <Link to="/brew">
+                                    <Typography variant="headline" component="h2" style={{ color: 'white' }}>
+                                        More...
+                                    </Typography>
+                                </Link>
                             </Grid>
                             <Grid item xs={0} md={2}>
                             </Grid>
@@ -170,6 +175,10 @@ export default class Header extends PureComponent<PropType> {
                     <Typography variant="display3" component="h2" style={{ marginTop: 40, marginBottom: 40 }}>
                         We want to help you brew great beer.
                     </Typography>
+                    <Typography variant="headline" style={{ marginTop: 40, marginBottom: 40 }}>
+                    Our goal is to provide the best home brewing information conveniently organized in one place.
+                                    <br /><br /> From basic information, like starting with equipment that will last and allow you to advance, to saving you time and money, and sparing you headaches.
+                    </Typography>
 
                 </div>
                 <div className="colorWrap">
@@ -182,7 +191,7 @@ export default class Header extends PureComponent<PropType> {
 
                                 <Typography variant="headline">
                                     Our goal is to provide the best home brewing information conveniently organized in one place.
-                                    <br /><br /> From basic information like starting with equipment that will last and allow you to advance, to saving you time and money, and sparing you headaches.
+                                    <br /><br /> From basic information, like starting with equipment that will last and allow you to advance, to saving you time and money, and sparing you headaches.
                                 </Typography>
 
                             </Grid>
